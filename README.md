@@ -2,8 +2,7 @@
 
 A multi-tenant, event-driven execution engine for chaining AI agent steps. Built for the Vocallabs Full-Stack Assignment, this platform allows users within isolated organizations to construct workflows, trigger runs (manually or via webhooks), and monitor live, step-by-step execution states.
 
-**Live Deployment:** [vocallabs-workflow-builder-chi.vercel.app](https://vocallabs-workflow-builder-chi.vercel.app/)
-**Video Walkthrough:** *(Insert your Loom video link here!)*
+**Live Deployment:** [vocallabs-workflow-builder-chi.vercel.app]([https://vocallabs-workflow-builder-chi.vercel.app/](https://vocallabs-workflow-builder-lfw0xdahc-pavans-projects-c3ed1f7b.vercel.app/))
 
 ---
 
@@ -46,7 +45,7 @@ The execution engine is designed asynchronously using a database-as-state model.
 To evaluate the multi-tenant isolation (Layer 1) and the role-based execution gating (Layer 2), two test accounts have been provisioned in the local database:
 
 **Organization A (Owner - Full Access)**
-*   **Email:** `admin@orga.com` *(Update this if you used your own email!)*
+*   **Email:** `owner@orga.com` 
 *   **Password:** `password123`
 *   **Role:** Can build workflows, trigger runs, and clear approval gates.
 
