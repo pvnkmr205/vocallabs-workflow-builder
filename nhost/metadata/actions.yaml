@@ -1,0 +1,19 @@
+actions:
+  - name: approveStep
+    definition:
+      kind: synchronous
+      handler: http://functions:3000/approve-step
+    permissions:
+      - role: user
+  - name: triggerWorkflowRun
+    definition:
+      kind: synchronous
+      handler: http://functions:3000/trigger-workflow
+    permissions:
+      - role: user
+custom_types:
+  enums: []
+  input_objects: []
+  objects:
+    - name: RunResponse
+  scalars: []

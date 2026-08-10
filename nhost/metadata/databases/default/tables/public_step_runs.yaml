@@ -1,0 +1,37 @@
+table:
+  name: step_runs
+  schema: public
+object_relationships:
+  - name: user
+    using:
+      foreign_key_constraint_on: approved_by
+  - name: workflow_run
+    using:
+      foreign_key_constraint_on: workflow_run_id
+  - name: workflow_step
+    using:
+      foreign_key_constraint_on: step_id
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - attempt_count
+        - input_data
+        - output_data
+        - error_message
+        - status
+        - approved_at
+        - completed_at
+        - created_at
+        - approved_by
+        - id
+        - step_id
+        - workflow_run_id
+      filter:
+        workflow_run:
+          workflow:
+            organization:
+              org_members:
+                user_id:
+                  _eq: X-Hasura-User-Id
+    comment: ""

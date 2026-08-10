@@ -1,0 +1,9 @@
+- comment: External endpoint to trigger an AI workflow
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: Webhook_Trigger
+  methods:
+    - POST
+  name: Webhook_Trigger
+  url: trigger-workflow

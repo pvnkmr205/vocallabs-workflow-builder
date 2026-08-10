@@ -1,0 +1,14 @@
+table:
+  name: org_usage_aggregation
+  schema: public
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - successful_runs
+        - total_runs
+        - org_id
+      filter:
+        org_id:
+          _eq: X-Hasura-User-Id
+    comment: ""

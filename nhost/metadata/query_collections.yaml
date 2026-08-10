@@ -1,0 +1,11 @@
+- name: allowed-queries
+  definition:
+    queries:
+      - name: Webhook_Trigger
+        query: |
+          mutation WebhookTrigger ($id: uuid!) {
+            triggerWorkflowRun(workflow_id: $id) {
+              success
+              message
+            }
+          }
