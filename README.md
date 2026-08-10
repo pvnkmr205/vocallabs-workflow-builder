@@ -2,7 +2,6 @@ AI Agent Workflow Builder
 A multi-tenant, event-driven execution engine for chaining AI agent steps. Built for the Vocallabs Full-Stack Assignment, this platform allows users within isolated organizations to construct workflows, trigger runs (manually or via webhooks), and monitor live, step-by-step execution states.
 
 Live Deployment: vocallabs-workflow-builder-chi.vercel.app
-Video Walkthrough: (Insert your Loom video link here!)
 
 🛠 Tech Stack
 Frontend: Next.js (React 19), Apollo GraphQL Client, Tailwind CSS
